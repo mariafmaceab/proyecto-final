@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header nav{
+    background-color: #ffffff;
+    font-size: 1.125rem;
+    width: 100%;
+    height: 4.375rem;
+    color: #470063;
+    border-bottom: .1875rem solid #470063;
+}
+
+a{
+    text-decoration: none;
+    color: #470063;
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar div{
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.logo{
+    justify-content: center;
+    align-items: end;
+}
+
+.gridContainer{
+    display: grid;
+}
+
+h1{
+    color: #FF1D79;
+    font-size: 3rem;
+}
+
+.sectionPrincipal{
+    width: 100%;
+    height: 33.125rem;
+    background-color: antiquewhite;
+    background-image: url("../assets/img/fotoPrincipal.png");
+    color: #470063;
+    font-size: 1.875rem;
+}
+
+.sectionPrincipal button{
+    font-size: 1.125rem;
+    color:#470063;
+    padding: 18px;
+    border: .125rem solid #470063;
+    border-radius: 1.25rem;
+    box-shadow: .25rem .25rem .25rem #555555;
+    font-family: "Poppins", sans-serif;
+}
+
+.sectionPrincipal .buttonPrincipal{
+    font-size: 1.125rem;
+    background-color: #FF1D79;
+    color:white;
+    border: .125rem solid #FF1D79;
+    font-family: "Poppins", sans-serif;
+}
+
+.sectionColeccion{
+    background-color: #EAE8FF;
+    font-family: "Poppins", sans-serif;
+}
+
+.tituloColeccion{
+    text-align: center;
+    color:#470063;
+    font-size: 3rem;
+}
+
+.sectionColeccion{
+    width: 100%;
+}
+
+.productos{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 22rem;
+    height: 23.125rem;
+    text-align: center;
+}
+
+.cardImg{
+    object-fit: contain;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+}
+
+@media (max-width:64rem){}
