@@ -13,11 +13,12 @@
     <header>
         <nav>
             <ul class="navBar">
+
                 <div>
-                    <li> <a href=""><img src="./assets/img/Hamburguesa.png" alt="MenuHamburguesa"></a></li>
-                    <li><p>Colección</p></li>
-                    <li> <a href="./pages/testimonios.html">Testimonios</a> </li>
-                <li> <a href="./pages/procesos.html">Proceso creativo</a> </li>
+                    <!--<li> <a href=""><img src="./assets/img/Hamburguesa.png" alt="MenuHamburguesa"></a></li>-->
+                    <li class="coleccion"><p>Colección</p></li>
+                    <li class="testimonios"> <a href="./pages/testimonios.html">Testimonios</a> </li>
+                    <li class="procesos"> <a href="./pages/procesos.html">Proceso creativo</a> </li>
                 </div>
 
                 <div class="logo">
@@ -28,9 +29,9 @@
                      <li> <a href="./pages/collares.html">Collares</a> </li> -->
 
                 <div>
-                    <li> <a href="./pages/presentacion.html">¿Quiénes somos?</a> </li>
-                    <li> <a href="./pages/contacto.html">Contáctanos</a> </li>
-                    <li> <a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></li>
+                    <li class="presentacion"> <a href="./pages/presentacion.html">¿Quiénes somos?</a> </li>
+                    <li class="contacto"> <a href="./pages/contacto.html">Contáctanos</a> </li>
+                    <li class="cesta"> <a href=""><img src="./assets/img/CestaNav.png" alt="CarritoDeCompras"></a></li>
                 </div>
             </ul>
         </nav>
@@ -39,51 +40,142 @@
     <main class="gridContainer">
         <section class="sectionPrincipal">
             <h1>Accesorios con mostacilla</h1>
-            <p>Cada pieza es una obra de arte tejida exclusivamente para ti</p>
-            <div>
-                <button class="buttonPrincipal">Explora nuestra colección</button>
-                <button>Personalizamos tu pedido</button>
+            <p class="texto">Cada pieza es una obra de arte <br>tejida exclusivamente para ti</br></p>
+            <div class="buttons">
+                <button class="btnPrimary">Explora nuestra colección</button>
+                <button class="btnSecondary">Personalizamos tu pedido</button>
             </div>
          </section>
 
          <section class="sectionColeccion">
             <p class="tituloColeccion">Nuestra colección</p>
-            <div class="productos">
+
+            <div class="productos Mostacilla">
+                <p class="textoCard mostacilla">Aretes con mostacilla</p>
 
                 <article class="card item1">
                     <div class="cardImg">
                         <img src="./assets/img/producto1.png" alt="imagenArete">
                     </div>
                     <div class="cardDescripcion">
-                        <p>Producto 1</p>
-                        <p>Descripcion del producto</p>
-                        <button>Cesta</button>
+                        <p class="tituloProducto">Aretes Colombia</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
                     </div>
+                    <p class="precioProducto">$80.000</p>
                 </article>
-
+                
+            <article class="anuncio anuncio1">
+                <div><p class="cartel cartel1">Los más vendidos</p></div>
                 <article class="card item2">
                     <div class="cardImg">
                         <img src="./assets/img/producto1.png" alt="imagenArete">
                     </div>
                     <div class="cardDescripcion">
-                        <p>Producto 1</p>
-                        <p>Descripcion del producto</p>
-                        <button>Cesta</button>
+                        <p class="tituloProducto">Aretes Mariposa</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
                     </div>
+                    <p class="precioProducto">$80.000</p>
                 </article>
+            </article>
 
                 <article class="card item3">
                     <div class="cardImg">
                         <img src="./assets/img/producto1.png" alt="imagenArete">
                     </div>
                     <div class="cardDescripcion">
-                        <p>Producto 1</p>
-                        <p>Descripcion del producto</p>
-                        <button>Cesta</button>
+                        <p class="tituloProducto">Aretes Loly</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
                     </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+            </div>
+            <button class="btnVerMas btn1">Ver más</button>
+
+            <div class="productos Miyuki">
+
+                <p class="textoCard miyuki">Aretes con miyuki</p>
+
+                <article class="card item21">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Aretes Colombia</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
                 </article>
 
+            <article class="anuncio anuncio2">
+                    <div><p class="cartel cartel2">Último lanzamiento</p></div>
+                <article class="card item22">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Aretes mariposa</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+            </article>
+
+                <article class="card item23">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Aretes Loly</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+                
             </div>
+            <button class="btnVerMas btn2">Ver más</button>
+
+            <div class="productos Collar">
+
+                <p class="textoCard collar">Collares</p>
+
+                <article class="card item31">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Producto 1</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+
+            <article class="anuncio anuncio3">
+                    <div><p class="cartel cartel3">Unidades limitadas</p></div>
+                <article class="card item32">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Producto 1</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+            </article>
+
+                <article class="card item33">
+                    <div class="cardImg">
+                        <img src="./assets/img/producto1.png" alt="imagenArete">
+                    </div>
+                    <div class="cardDescripcion">
+                        <p class="tituloProducto">Producto 1</p>
+                        <button class="cestaCard"><a href=""><img src="./assets/img/Cesta.png" alt="CarritoDeCompras"></a></button>
+                    </div>
+                    <p class="precioProducto">$80.000</p>
+                </article>
+            </div>
+            <button class="btnVerMas btn3">Ver más</button>
+            
          </section>
     </main>
 
