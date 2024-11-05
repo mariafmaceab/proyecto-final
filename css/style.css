@@ -40,7 +40,17 @@ a{
     top: 1.4375rem;
 }
 
+.imgproducto{
+    width: 100%;
+}
 /* Seccion Principal*/
+.btnMovilPrimary{
+    display: none;
+}
+
+.btnMovilSecondary{
+    display: none;
+}
 
 .sectionPrincipal{
     width: 100%;
@@ -115,13 +125,17 @@ h1{
 
 /* Seccion Coleccion*/
 
+.btnMovilVerMas{
+    display: none;
+}
+
 .sectionColeccion{
     background-color: #EAE8FF;
     font-family: "Poppins", sans-serif;
     width: 100%;
     padding: 1.875rem;
     display: grid;
-    grid-template-rows: repeat(62.5rem 1fr 62.5rem 1fr 62.5rem 1fr 62.5rem);
+    grid-template-rows: 210px 380px 210px 380px 210px 380px 210px;
     grid-template-columns: repeat(1,1fr);
 }
 
@@ -138,13 +152,14 @@ h1{
     font-size: 1.875rem;
     writing-mode: vertical-lr;
     transform: rotateZ(180deg);
+    text-align: center;
 }
 
 .productos{
     width: 100%;
     display:flex;
     justify-content: space-evenly;
-    gap: 1.25rem;
+    gap: 10px;
 }
 
 .tituloProducto{
@@ -162,24 +177,27 @@ h1{
     text-align: center;
     border-radius: 1.25rem;
     cursor: pointer;
+    padding: .4375rem;
 }
 
 .cardImg{
+    display:flex;
+    justify-content: center;
     object-fit: contain;
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
-    padding: .3125rem;
 }
 
 .cardDescripcion{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: .625rem;
 }
 
 .precioProducto{
     display:flex;
     justify-content: flex-start;
-    padding: 0px 0px 0px 50px;
+    padding-left: 10px;
 }
 
 .anuncio{
@@ -212,6 +230,13 @@ h1{
     cursor: pointer;
 }
 
+.contenedorbtn{
+    display: flex;
+    justify-content: end;
+    align-self: self-start;
+    padding: 30px;
+}
+
 .btnVerMas{
     display: flex;
     width: 9.3125rem;
@@ -228,7 +253,18 @@ h1{
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 } 
+@media (max-width:1180px){
+    .item3{
+        display:none
+    }
+    .item23{
+        display:none
+    }
+    .item33{
+        display:none
+    }
 
+}
 @media (max-width:1024px){
     .coleccion{
         display:none
@@ -325,4 +361,289 @@ h1{
         font-family: "Poppins", sans-serif;
         cursor: pointer;
     }
+
+    /*Coleccion*/
+    .item3{
+        display:none
+    }
+    .item23{
+        display:none
+    }
+    .item33{
+        display:none
+    }
+
+}
+
+@media (max-width:834px){
+    .card{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media (max-width:715px){
+    .sectionColeccion{
+        padding: 1.25rem;
+        display: grid;
+        grid-template-rows: 210px 300px 210px 300px 210px 300px 210px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 250px;
+        height: 300px;
+    }
+
+    .tituloProducto{
+        font-size: 1.125rem;
+    }
+
+    .btnVerMas{
+        width: 8.0625rem;
+        height: 1.625rem;
+    }
+
+    .cartel{
+        width: 12.5rem;
+        height: 1.625rem;
+        position: absolute;
+        top: -25px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .textoCard{
+        font-size: 1.5rem;
+    }
+
+    .tituloColeccion{
+        font-size: 2.125rem;
+    }
+}
+
+@media (max-width:615px){
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .texto{
+        font-size: 20px;
+    }
+
+    .sectionPrincipal .btnSecondary{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .sectionPrincipal .btnPrimary{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .sectionColeccion{
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 200px 270px 200px 270px 200px 270px 200px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 214px;
+        height: 264px;
+        padding: 6px;
+    }
+
+    .tituloProducto{
+        font-size: 18px;
+    }
+
+    .btnVerMas{
+        width: 110px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .cartel{
+        width: 170px;
+        height: 1.625rem;
+        position: absolute;
+        top: -25px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
+
+    .textoCard{
+        font-size: 20px;
+    }
+
+    .tituloColeccion{
+        font-size: 2.125rem;
+    }
+
+    .cestaCard{
+        width: 25px;
+        height: 25px;
+    }
+
+    .imgcestacard{
+        width: 15px;
+        height: 18px;
+    }
+
+    .contenedorbtn{
+        padding: 12px;
+    }
+}
+
+@media (max-width:425px){
+
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .sectionPrincipal .btnPrimary{
+        display: none;
+    }
+    .sectionPrincipal .btnSecondary{
+        display: none;
+    }
+    .btnVerMas{
+        display:none;
+    }
+
+    .btnMovilPrimary{
+        display:block;
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF1D79;
+        color:white;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        border: .125rem solid #FF1D79;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .btnMovilSecondary{
+        display: block;
+        width: 140px;
+        height: 36px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#470063;
+        border: .125rem solid #470063;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        background-color: rgba(15, 10, 10, 0);
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    
+    .texto{
+        font-size: 18px;
+    }
+
+    .sectionColeccion{
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 130px 200px 130px 200px 130px 200px 130px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .btnMovilVerMas{
+        display:block;
+        display: flex;
+        width: 195px;
+        height: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background-color: #FF1D79;
+        color:white;
+        padding: 14px;
+        border-radius: 15px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        border: .125rem solid #FF1D79;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+    }
+
+    .contenedorbtn{
+        justify-content: center;
+    }
+
+    .card{
+        width: 173px;
+        height: 187px;
+        padding: 7px;
+    }
+
+    .tituloProducto{
+        font-size: 14px;
+    }
+
+    .precioProducto{
+        font-size: 14px;
+    }
+
+    .cardDescripcion{
+        padding: 0;
+        padding-left: 7px;
+        padding-top: 5px;
+    }
+
+    .btnVerMas{
+        width: 120px;
+        height: 12px;
+        font-size: 16px;
+    }
+
+    .cartel{
+        width: 135px;
+        height: 19px;
+        position: absolute;
+        top: -18px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+    }
+
+    .textoCard{
+        display: none;
+    }
+
+    .tituloColeccion{
+        font-size: 30px;
+    }
+
+    .cestaCard{
+        width: 18px;
+        height: 18px;
+    }
+
+    .imgcestacard{
+        width: 10px;
+        height: 10px;
+    }
+
+    .contenedorbtn{
+        padding: 12px;
+    }
+    
 }
