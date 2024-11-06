@@ -14,6 +14,12 @@ a{
     color: #470063;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navBar{
     background-color: #ffffff;
     font-size: 1.125rem;
@@ -192,7 +198,8 @@ h1{
 .cardDescripcion{
     display:flex;
     justify-content: space-between;
-    padding: .625rem;
+    padding: 10px;
+    height: 50px;
 }
 
 .precioProducto{
@@ -264,10 +271,6 @@ h1{
 .dropdown-menu {
     width: 200%;
     border-radius: 0.625rem;
-}
-
-nav ul div button.dropdown-toggle::after {
-    display: none;
 }
 
 nav ul div button.dropdown-toggle {
