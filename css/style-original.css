@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #470063;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    background-color: #ffffff;
+    font-size: 1.125rem;
+    width: 100%;
+    height: 4.375rem;
+    color: #470063;
+    border-bottom: .1875rem solid #470063;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: .625rem 1.875rem;
+}
+
+.navBar div{
+    display: flex;
+    gap: 1.5625rem;
+    align-items: center;
+}
+
+.navBar .logo{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1.4375rem;
+}
+
+.imgproducto{
+    width: 100%;
+}
+
+/* Seccion Principal*/
+.btnMovilPrimary{
+    display: none;
+}
+
+.btnMovilSecondary{
+    display: none;
+}
+
+.sectionPrincipal{
+    width: 100%;
+    height: 33.125rem;
+    background-image: url("../assets/img/fotoPrincipal.png");
+    color: #470063;
+    font-size: 1.875rem;
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+h1{
+    color: #FF1D79;
+    font-size: 3rem;
+    font-weight: 400;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    align-self: end;
+}
+
+.texto{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    align-self: self-start;
+  }
+
+.sectionPrincipal .btnSecondary{
+    display: flex;
+    width: 17.4375rem;
+    height: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    color:#470063;
+    border: .125rem solid #470063;
+    padding: 18px;
+    border-radius: 1.25rem;
+    box-shadow: .25rem .25rem .25rem #555555;
+    background-color: rgba(15, 10, 10, 0);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.sectionPrincipal .btnPrimary{
+    display: flex;
+    width: 17.4375rem;
+    height: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    background-color: #FF1D79;
+    color:white;
+    padding: 18px;
+    border-radius: 1.25rem;
+    box-shadow: .25rem .25rem .25rem #555555;
+    border: .125rem solid #FF1D79;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+/* Seccion Coleccion*/
+
+.btnMovilVerMas{
+    display: none;
+}
+
+.sectionColeccion{
+    background-color: #EAE8FF;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 1.875rem;
+    display: grid;
+    grid-template-rows: 210px 380px 210px 380px 210px 380px 210px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.tituloColeccion{
+    text-align: center;
+    color:#470063;
+    font-size: 3rem;
+    padding: 2.5rem;
+}
+
+.textoCard{
+    font-family: "Poppins", sans-serif;
+    color:#470063;
+    font-size: 1.875rem;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    text-align: center;
+}
+
+.productos{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.tituloProducto{
+    display:flex;
+    color:#FF1D79;
+    font-size: 1.375rem;
+    align-items: left;
+    justify-content: left;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 22rem;
+    height: 23.125rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    padding: .4375rem;
+}
+
+.cardImg{
+    display:flex;
+    justify-content: center;
+    object-fit: contain;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+}
+
+.cardDescripcion{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+}
+
+.precioProducto{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.anuncio{
+    position: relative;
+}
+
+.cartel{
+    display: flex;
+    background-color: #470063;
+    width: 14.5625rem;
+    height: 2.0625rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    position: absolute;
+    top: -2.0625rem; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cestaCard{
+    background-color: #FF1D79;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border-radius: 30px;
+    border:0rem;
+    cursor: pointer;
+}
+
+.contenedorbtn{
+    display: flex;
+    justify-content: end;
+    align-self: self-start;
+    padding: 30px;
+}
+
+.btnVerMas{
+    display: flex;
+    width: 9.3125rem;
+    height: 2.875rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    background-color: #FF1D79;
+    color:white;
+    padding: 18px;
+    border-radius: 1.25rem;
+    box-shadow: .25rem .25rem .25rem #555555;
+    border: .125rem solid #FF1D79;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+} 
+
+/*PÁGINA DE ARETES*/
+.dropdown-toggle {
+    color: #470063;
+    font-size: 1.125rem;
+}
+
+.dropdown-menu {
+    width: 200%;
+    border-radius: 0.625rem;
+}
+
+nav ul div button.dropdown-toggle {
+    align-items: center;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-toggle a {
+    text-decoration: none;
+    padding-left: 5%;
+}
+
+.dropdown-toggle a:hover {
+    color: #470063;
+}
+
+.dropdown-toggle i {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    font-weight:bold;
+}
+
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-block: 0.5rem;
+}
+
+.dropdown-menu li a {
+    color: #FF1D79;
+    font-size: 1.125rem;
+    width: 60%;
+}
+
+.dropdown-menu li img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.dropdown-item {
+    color: #FF1D79;
+    font-size: 1.125rem;
+}
+
+/* Seccion Aretes*/
+.earrings-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EAE8FF;
+}
+
+.main-section {
+    width: 90%;
+    padding-block: 3%;
+}
+
+.main-section .title-section h1 {
+    font-weight: 500;
+    font-size: 2.66rem;
+}
+
+.main-section .filters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.main-section .filters-section p {
+    font-size: 1rem;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-section .filters-section .dropdown .dropdown-toggle{
+    font-size: 1rem;
+    color: #363636;
+}
+
+.main-section .products-section {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3%;
+    gap: 4rem;
+}
+
+@media (max-width:1180px){
+    .item3{
+        display:none
+    }
+    .item23{
+        display:none
+    }
+    .item33{
+        display:none
+    }
+
+}
+@media (max-width:1024px){
+    .coleccion{
+        display:none
+    }
+    .testimonios{
+        display:none
+    }
+    .presentacion{
+        display:none
+    }
+    .contacto{
+        display:none
+    }
+    .procesos{
+        display:none
+    }
+    .cesta{
+        display:none
+    }
+    header{
+        width: 100%;
+        height: 4.375rem;
+    }
+
+    .sectionPrincipal{
+        width: 100%;
+        height: 33.125rem;
+        background-image: url("../assets/img/fotoPrincipal.png");
+        background-position: center;
+        color: #470063;
+        font-size: 1.625rem; 
+        font-weight: 400;
+        display: grid;
+        place-items: center;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    h1{
+        color: #FF1D79;
+        font-size: 2.75rem;
+        font-weight: 400;
+        grid-row: 1/2;
+        grid-column: 1/4;
+        align-self: end;
+    }
+    
+    .texto{
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        grid-row: 3/4;
+        grid-column: 1/4;
+        align-self: self-start;
+      }
+    
+    .sectionPrincipal .btnSecondary{
+        display: flex;
+        width: 17.25rem;
+        height: 3.75rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.125rem;
+        color:#470063;
+        font-weight: 500;
+        border: .125rem solid #470063;
+        padding: 18px;
+        border-radius: 1.25rem;
+        box-shadow: .25rem .25rem .25rem #555555;
+        background-color: rgba(15, 10, 10, 0);
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+    }
+    
+    .sectionPrincipal .btnPrimary{
+        display: flex;
+        width: 17.25rem;
+        height: 3.75rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.125rem;
+        background-color: #FF1D79;
+        color:white;
+        padding: 18px;
+        border-radius: 1.25rem;
+        box-shadow: .25rem .25rem .25rem #555555;
+        border: .125rem solid #FF1D79;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+    }
+
+    /*Coleccion*/
+    .item3{
+        display:none
+    }
+    .item23{
+        display:none
+    }
+    .item33{
+        display:none
+    }
+
+}
+
+@media (max-width:834px){
+    .card{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media (max-width:715px){
+    .sectionColeccion{
+        padding: 1.25rem;
+        display: grid;
+        grid-template-rows: 210px 300px 210px 300px 210px 300px 210px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 250px;
+        height: 300px;
+    }
+
+    .tituloProducto{
+        font-size: 1.125rem;
+    }
+
+    .btnVerMas{
+        width: 8.0625rem;
+        height: 1.625rem;
+    }
+
+    .cartel{
+        width: 12.5rem;
+        height: 1.625rem;
+        position: absolute;
+        top: -25px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .textoCard{
+        font-size: 1.5rem;
+    }
+
+    .tituloColeccion{
+        font-size: 2.125rem;
+    }
+}
+
+@media (max-width:615px){
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .texto{
+        font-size: 20px;
+    }
+
+    .sectionPrincipal .btnSecondary{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .sectionPrincipal .btnPrimary{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .sectionColeccion{
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 200px 270px 200px 270px 200px 270px 200px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .card{
+        width: 214px;
+        height: 264px;
+        padding: 6px;
+    }
+
+    .tituloProducto{
+        font-size: 18px;
+    }
+
+    .btnVerMas{
+        width: 110px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .cartel{
+        width: 170px;
+        height: 1.625rem;
+        position: absolute;
+        top: -25px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
+
+    .textoCard{
+        font-size: 20px;
+    }
+
+    .tituloColeccion{
+        font-size: 2.125rem;
+    }
+
+    .cestaCard{
+        width: 25px;
+        height: 25px;
+    }
+
+    .imgcestacard{
+        width: 15px;
+        height: 18px;
+    }
+
+    .contenedorbtn{
+        padding: 12px;
+    }
+}
+
+@media (max-width:425px){
+
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .sectionPrincipal .btnPrimary{
+        display: none;
+    }
+    .sectionPrincipal .btnSecondary{
+        display: none;
+    }
+    .btnVerMas{
+        display:none;
+    }
+
+    .btnMovilPrimary{
+        display:block;
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF1D79;
+        color:white;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        border: .125rem solid #FF1D79;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .btnMovilSecondary{
+        display: block;
+        width: 140px;
+        height: 36px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#470063;
+        border: .125rem solid #470063;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        background-color: rgba(15, 10, 10, 0);
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    
+    .texto{
+        font-size: 18px;
+    }
+
+    .sectionColeccion{
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 130px 200px 130px 200px 130px 200px 130px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .btnMovilVerMas{
+        display:block;
+        display: flex;
+        width: 195px;
+        height: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background-color: #FF1D79;
+        color:white;
+        padding: 14px;
+        border-radius: 15px;
+        box-shadow: .25rem .25rem .25rem #555555;
+        border: .125rem solid #FF1D79;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+    }
+
+    .contenedorbtn{
+        justify-content: center;
+    }
+
+    .card{
+        width: 173px;
+        height: 187px;
+        padding: 7px;
+    }
+
+    .tituloProducto{
+        font-size: 14px;
+    }
+
+    .precioProducto{
+        font-size: 14px;
+    }
+
+    .cardDescripcion{
+        padding: 0;
+        padding-left: 7px;
+        padding-top: 5px;
+    }
+
+    .btnVerMas{
+        width: 120px;
+        height: 12px;
+        font-size: 16px;
+    }
+
+    .cartel{
+        width: 135px;
+        height: 19px;
+        position: absolute;
+        top: -18px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+    }
+
+    .textoCard{
+        display: none;
+    }
+
+    .tituloColeccion{
+        font-size: 30px;
+    }
+
+    .cestaCard{
+        width: 18px;
+        height: 18px;
+    }
+
+    .imgcestacard{
+        width: 10px;
+        height: 10px;
+    }
+
+    .contenedorbtn{
+        padding: 12px;
+    }
+    
+}

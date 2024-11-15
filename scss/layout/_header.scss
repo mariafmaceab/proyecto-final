@@ -1,0 +1,39 @@
+@import url(../utilities/_mixins.scss);
+header{
+    font-family: $fuente;
+    a{
+        color: map-get($color, primario);
+        text-decoration: none;
+        &:hover{
+            color: map-get($color, secundario);
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navBar{
+        @include flex(row, space-around, center, 30px);
+        background-color: #ffffff;
+        font-size: map-get($medidas, parrafo);
+        width: 100%;
+        height: 4.375rem;
+        border-bottom: .1875rem solid #470063;
+        list-style: none;
+    }
+
+    .navBar div{
+        @include flex(row, space-between, center, 30px);
+    }
+
+    .logo{
+        position:relative;
+        top: 1.3125rem;
+        
+    }
+    .imgproducto{
+        width: 100%;
+    }
+}

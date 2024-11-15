@@ -1,0 +1,25 @@
+/*Carpeta utilities*/
+@import "./utilities/map";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+/*
+@import "./utilities/fuctions";
+*/
+
+/*Carpeta base*/
+@import "./base/reset";
+@import "./base/tipografia";
+
+/*Carpeta layout*/
+@import "./layout/header";
+@import "./layout/seccionPrincipal";
+@import "./layout/_seccionColeccion.scss";
+@import "./layout/paginaAretes";
+
+/*Carpeta components
+@import "./components/bootstrap";*/
+@import "./components/cards";
+
+/*Media Querys*/
+@import "./layout/media/media1180";
+@import "./layout/media/mediamovil";
