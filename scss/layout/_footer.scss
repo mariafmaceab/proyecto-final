@@ -1,0 +1,36 @@
+.sectionFooter{
+    background-color: map-get($color, terciario);
+    .articleFooter{
+        @include flex(row, space-around, baseline, 30px);
+        flex-wrap: wrap;
+        .divcontactoFooter{
+            padding: 5px;
+            .imgLogoFooter{
+                padding-bottom: .9375rem;
+            }
+            .imgFooter{
+                padding-right: .9375rem;
+            }
+        }
+        .menuFooter{
+            .link-list{
+                list-style-type: none;
+                .link{
+                    text-decoration: none;
+                    color:#212529;
+                    &:hover{
+                        color: map-get($color, primario);
+                    }
+                }
+            }
+        }
+        .subtitulo{
+            font-weight: 600;
+        }
+ 
+    }
+    .articleCopy{
+        text-align: center;
+        padding: 40px;
+    }
+}

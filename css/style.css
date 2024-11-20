@@ -301,6 +301,44 @@ nav ul div button.dropdown-toggle {
   gap: 4rem;
 }
 
+.sectionFooter {
+  background-color: #EAE8FF;
+}
+.sectionFooter .articleFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.sectionFooter .articleFooter .divcontactoFooter {
+  padding: 5px;
+}
+.sectionFooter .articleFooter .divcontactoFooter .imgLogoFooter {
+  padding-bottom: 0.9375rem;
+}
+.sectionFooter .articleFooter .divcontactoFooter .imgFooter {
+  padding-right: 0.9375rem;
+}
+.sectionFooter .articleFooter .menuFooter .link-list {
+  list-style-type: none;
+}
+.sectionFooter .articleFooter .menuFooter .link-list .link {
+  text-decoration: none;
+  color: #212529;
+}
+.sectionFooter .articleFooter .menuFooter .link-list .link:hover {
+  color: #470063;
+}
+.sectionFooter .articleFooter .subtitulo {
+  font-weight: 600;
+}
+.sectionFooter .articleCopy {
+  text-align: center;
+  padding: 40px;
+}
+
 /*Carpeta components
 @import "./components/bootstrap";*/
 .card {
@@ -518,7 +556,7 @@ nav ul div button.dropdown-toggle {
     font-size: 14px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 625px) {
   .sectionPrincipal .navBar .dropdown {
     padding: 50px;
   }
