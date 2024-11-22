@@ -1,0 +1,49 @@
+.sectionSlider{
+    background-color: map-get($color, primario);
+    padding: 1.25rem;
+    overflow: hidden;
+    white-space: nowrap;
+    .slide-track{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;   
+        animation: 20s slide infinite linear;
+        width: calc(356px*8);
+        .slide{
+            display: flex;
+            flex-direction: row;
+            .containerSlide{
+                display: flex;
+                flex-direction: row;
+                .textoSlide{
+                    color:aliceblue;
+                    font-size: map-get($medidas, subtitulo);
+                    align-self: center;
+                    margin: 10px 50px 10px 25px;
+                }
+                .imgSlide{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+
+/*@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}*/
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-356px*4));
+    }
+}

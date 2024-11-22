@@ -1,8 +1,10 @@
 @import url(../utilities/_mixins.scss);
 .sectionPrincipal{
     background-image: url("../assets/img/fotoPrincipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 33.125rem;
+    height: 38.75rem;
     @include grid(repeat(3,1fr), repeat(3,1fr));
     place-items: center;
 

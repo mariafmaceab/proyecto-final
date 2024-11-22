@@ -1,5 +1,6 @@
 .sectionFooter{
     background-color: map-get($color, terciario);
+
     .articleFooter{
         @include flex(row, space-around, baseline, 30px);
         flex-wrap: wrap;
@@ -7,6 +8,7 @@
             padding: 5px;
             .imgLogoFooter{
                 padding-bottom: .9375rem;
+                padding-top: 15px;
             }
             .imgFooter{
                 padding-right: .9375rem;

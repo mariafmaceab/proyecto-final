@@ -1,4 +1,7 @@
 @media (max-width:625px){
+    .divNav{
+        width: 100%;
+    }
     .sectionPrincipal{
         .navBar{  
             .dropdown{
@@ -111,5 +114,30 @@
             }
         }
     }
+    .sectionFotografia{
+        .tituloFotografia{
+            font-size: 24px;
+        }
+        .fotografias{
+            .fotografia{
+                width: 372px;
+                height: 340px;
+            }
+        }
+    }
     
+}
+
+@media (max-width:400px){
+    .sectionFotografia{
+        margin:0;
+        padding:0;
+        .fotografias{
+            padding: 1px;
+            .fotografia{
+                width: 302px;
+                height: 270px;
+            }
+        }
+    }
 }

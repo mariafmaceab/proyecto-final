@@ -1,0 +1,22 @@
+.sectionFotografia{
+    margin-bottom: 1.25rem;
+    .tituloFotografia{
+        font-size: map-get($medidas, titulo);
+        text-align: center;
+        color: map-get($color, primario);
+        font-style: italic;
+        margin-top: 50px;
+    }
+    .fotografias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding:1.875rem;
+        .fotografia{
+            width: 29.5rem;
+            height: 27.5rem;
+            margin-bottom: .625rem;
+        }
+    }
+}
