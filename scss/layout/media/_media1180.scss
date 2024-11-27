@@ -1,10 +1,16 @@
-@media (max-width:1180px){
+@media (max-width:1188px){
     .sectionColeccion{
         .productos{
-        @include flex(row, center, center, .9375rem);
+            @include flex(row, center, center, .9375rem);
+        }
+    }
+    .sectionTestimonios{
+        .ultima{
+            display:none;
+        }
     }
 }
-}
+
 
 @media (max-width:1130px){
     .item3{
@@ -75,9 +81,6 @@
 
 @media (max-width:834px){
     .sectionColeccion{
-        .tituloColeccion{
-            font-size: 2.125rem;
-        }
         .contenedorbtn{
             .btnVerMas{
                 width: 8.0625rem;;
@@ -110,6 +113,73 @@
         .sectionColeccion{
             .tituloAretes h2{
                 font-size: 34px;
+            }
+        }
+    }
+
+    .sectionSlider{
+        .slide-track{
+            height: 40px;
+            .slide{
+                .containerSlide{
+                    .textoSlide{
+                        font-size: map-get($medidas, parrafo);
+                        margin: 10px 50px 10px 25px;
+                    }
+                }            
+            }
+        }
+    }
+
+    .sectionTestimonios{
+        padding: 5px;
+        .cardTestimonios{
+            gap: 8px;
+        }
+        .divTestimonios{
+            width: 200px;
+            height: 310px;
+            padding:15px;
+            .piedeTestimonios{
+                display: flex;
+                flex-direction: row;
+                .piedeTestimonios2{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                }
+            }
+            .textoCardTestimonios{
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+            .nombre{
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            .fotoCliente{
+                margin-bottom: 5px;
+                margin-right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+
+    .sectionCompra{
+        .contenedorCompra{
+            .cardCompra{
+                width: 500px;
+                height: 150px;
+                .divCompra{
+                    .textoCompra{
+                        font-size: map-get($medidas, parrafo);
+                    }
+                    .imgCompra{
+                        width: 84px;
+                        height: 84px;
+                    }
+                }
             }
         }
     }
@@ -184,6 +254,35 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 14px;
+        }
+    }
+    .sectionTestimonios{
+        .tituloTestimonios{
+            font-size: 2.125rem;
+        }
+        .penultima{
+            display:none;
+        }
+    }
+    
+    .sectionCompra{
+        .tituloCompra{
+            font-size: 2.125rem;
+        }
+        .contenedorCompra{
+            .cardCompra{
+                width: 450px;
+                height: 150px;
+                .divCompra{
+                    .textoCompra{
+                        font-size: 16px;
+                    }
+                    .imgCompra{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,0 +1,40 @@
+.sectionCompra{
+    padding: 1.25rem;
+    @include grid(repeat(2,1fr), repeat(1fr));
+    .linea{
+        height: 6px;
+        width: 100%;
+        background-color: #FF1D79;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        align-self: center;
+        border-radius: 20px;
+        opacity: 100;
+    }
+    .tituloCompra{
+        color: map-get($color,secundario);
+        font-size: map-get($medidas, titulo);
+        text-align: center;
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .contenedorCompra{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        justify-items: center;
+        .cardCompra{
+            @include flex(row, center, center, 55px);
+            background-color: map-get($color, secundario);
+            width: 700px;
+            height: 190px;
+            border-radius: 3.125rem;
+            .divCompra{
+                @include flex(column, center, center, 10px);
+                .textoCompra{
+                    color: white;
+                    font-size: map-get($medidas, parrafo);
+                }
+            }
+        }
+    }
+}

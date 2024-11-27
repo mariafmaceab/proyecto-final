@@ -1,0 +1,34 @@
+.sectionTestimonios{
+    padding: .625rem;
+    .tituloTestimonios{
+        color: map-get($color,primario );
+        font-size: map-get($medidas, titulo);
+        text-align: center;
+        padding: 1.25rem;
+    }
+    .cardTestimonios{
+        @include flex(row, center, center, 15px);
+    }
+    .cardCompleta{
+        @include flex(column, center, center, 15px);
+    }
+    .divTestimonios{
+        background-color: map-get($color, terciario);
+        width: 15.875rem;
+        height: 25rem;
+        border-radius: .9375rem;
+        padding:20px;
+        .textoCardTestimonios{
+            color: map-get($color, primario);
+            font-size: map-get($medidas, parrafo);
+        }
+        .nombre{
+            color: map-get($color, secundario);
+            font-size: map-get($medidas, parrafo);
+            font-weight: 700;
+        }
+        .fotoCliente{
+            margin-bottom: .625rem;
+        }
+    }
+}
