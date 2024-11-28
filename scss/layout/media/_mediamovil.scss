@@ -1,4 +1,4 @@
-@media (max-width:625px){
+@media (max-width:500px){
     .divNav{
         width: 100%;
     }
@@ -117,15 +117,41 @@
     .sectionFotografia{
         .tituloFotografia{
             font-size: 24px;
-        }
-        .fotografias{
-            .fotografia{
-                width: 372px;
-                height: 340px;
-            }
+        }     
+    }
+    .sectionTestimonios{
+        .tituloTestimonios{
+            font-size: 24px;
         }
     }
+    .sectionCompra{
+        .tituloCompra{
+            font-size: 24px;
+        }
+        .contenedorCompra{
+            .cardCompra{
+                width: 290px;
+                height: 100px;
+                border-radius: 15px;
+                gap: 20px;
+                .compra1{
+                    display: none;
+                }
+                .divCompra{
+                    .textoCompra{
+                        margin:0px;
+                        margin-bottom: 5px;;
+                    }
+                    .imgCompra{
+                        width: 60px;
+                        height: 60px;
+                        margin: 5px 0px 0px 0px;
+                    }
+                }
+            }
+        }
     
+    }
 }
 
 @media (max-width:400px){
@@ -138,6 +164,11 @@
                 width: 302px;
                 height: 270px;
             }
+        }
+    }
+    .sectionTestimonios{
+        .antepenultima{
+            display:none;
         }
     }
 }
