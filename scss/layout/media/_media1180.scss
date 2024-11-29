@@ -25,8 +25,8 @@
     .sectionColeccion{
         .productos{
         @include flex(row, center, center, 1.5625rem);
+        }
     }
-}
 }
 @media (max-width: 950px){
     .navBar{  
@@ -76,6 +76,19 @@
             grid-column: 1/4;
             align-self:baseline;
           }
+    }
+    .sectionContacto{
+        .datos{
+            .datoContacto{
+                width: 600px;
+            }
+            .dato1{
+                width: 290px;
+            }
+            .dato2{
+                width: 290px;
+            }
+        }
     }
 }
 
@@ -295,6 +308,27 @@
                         height: 80px;
                     }
                 }
+            }
+        }
+    }
+    .sectionContacto{
+        .articleContacto{
+            .tituloContacto{
+                font-size: map-get($medidas, subtitulo);
+            }
+            .parrafoContacto{
+                font-size: map-get($medidas, parrafo);
+            }
+        }
+        .datos{
+            .datoContacto{
+                width: 400px;
+            }
+            .dato1{
+                width: 190px;
+            }
+            .dato2{
+                width: 190px;
             }
         }
     }

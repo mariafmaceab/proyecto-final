@@ -152,6 +152,27 @@
         }
     
     }
+    .sectionContacto{
+        .articleContacto{
+            .tituloContacto{
+                font-size: map-get($medidas, subtitulo);
+            }
+            .parrafoContacto{
+                font-size: map-get($medidas, parrafo);
+            }
+        }
+        .datos{
+            .datoContacto{
+                width: 300px;
+            }
+            .dato1{
+                width: 150px;
+            }
+            .dato2{
+                width: 150px;
+            }
+        }
+    }
 }
 
 @media (max-width:400px){

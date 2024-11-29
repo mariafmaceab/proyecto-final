@@ -1,0 +1,45 @@
+.sectionContacto{
+    padding: 40px;
+    .articleContacto{
+        @include flex(column, center, center, 5px);
+        .tituloContacto{
+            color: map-get($color, secundario);
+            font-size: map-get($medidas, titulo);
+        }
+        .parrafoContacto{
+            color: map-get($color, primario);
+            font-size: map-get($medidas, subtitulo);
+            text-align: center;
+        }
+    }
+    .datos{
+        .datoContacto{
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 7px;
+            font-size: map-get($medidas, parrafo);
+            width: 800px;
+            justify-content: center;
+        }
+        .primerosDatos{
+            @include flex(row, center, center, 20px);
+        }
+        .dato1{
+            width: 390px;
+        }
+        .dato2{
+            width: 390px;
+        }
+        .dato4{
+            height: 100px;
+        }
+        .dato5{
+            text-align: center;
+            background-color: map-get($color, primario);
+            color: aliceblue;
+        }
+        .segundosDatos{
+            @include flex(column, center, center, 5px);
+        }
+    }
+}

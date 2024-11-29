@@ -507,6 +507,62 @@ nav ul div button.dropdown-toggle {
   padding: 40px;
 }
 
+.sectionContacto {
+  padding: 40px;
+}
+.sectionContacto .articleContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sectionContacto .articleContacto .tituloContacto {
+  color: #FF1D79;
+  font-size: 3rem;
+}
+.sectionContacto .articleContacto .parrafoContacto {
+  color: #470063;
+  font-size: 1.875rem;
+  text-align: center;
+}
+.sectionContacto .datos .datoContacto {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 7px;
+  font-size: 1.125rem;
+  width: 800px;
+  justify-content: center;
+}
+.sectionContacto .datos .primerosDatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sectionContacto .datos .dato1 {
+  width: 390px;
+}
+.sectionContacto .datos .dato2 {
+  width: 390px;
+}
+.sectionContacto .datos .dato4 {
+  height: 100px;
+}
+.sectionContacto .datos .dato5 {
+  text-align: center;
+  background-color: #470063;
+  color: aliceblue;
+}
+.sectionContacto .datos .segundosDatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 /*Carpeta components
 @import "./components/bootstrap";*/
 .card {
@@ -621,6 +677,15 @@ nav ul div button.dropdown-toggle {
   .sectionPrincipal .buttons {
     grid-column: 1/4;
     align-self: baseline;
+  }
+  .sectionContacto .datos .datoContacto {
+    width: 600px;
+  }
+  .sectionContacto .datos .dato1 {
+    width: 290px;
+  }
+  .sectionContacto .datos .dato2 {
+    width: 290px;
   }
 }
 @media (max-width: 834px) {
@@ -802,6 +867,21 @@ nav ul div button.dropdown-toggle {
     width: 80px;
     height: 80px;
   }
+  .sectionContacto .articleContacto .tituloContacto {
+    font-size: 1.875rem;
+  }
+  .sectionContacto .articleContacto .parrafoContacto {
+    font-size: 1.125rem;
+  }
+  .sectionContacto .datos .datoContacto {
+    width: 400px;
+  }
+  .sectionContacto .datos .dato1 {
+    width: 190px;
+  }
+  .sectionContacto .datos .dato2 {
+    width: 190px;
+  }
 }
 @media (max-width: 500px) {
   .divNav {
@@ -938,6 +1018,21 @@ nav ul div button.dropdown-toggle {
     width: 60px;
     height: 60px;
     margin: 5px 0px 0px 0px;
+  }
+  .sectionContacto .articleContacto .tituloContacto {
+    font-size: 1.875rem;
+  }
+  .sectionContacto .articleContacto .parrafoContacto {
+    font-size: 1.125rem;
+  }
+  .sectionContacto .datos .datoContacto {
+    width: 300px;
+  }
+  .sectionContacto .datos .dato1 {
+    width: 150px;
+  }
+  .sectionContacto .datos .dato2 {
+    width: 150px;
   }
 }
 @media (max-width: 400px) {
