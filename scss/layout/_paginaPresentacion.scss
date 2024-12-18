@@ -1,0 +1,60 @@
+.presentación{
+    .frase{
+        width: 100%;
+    }
+    .presentacionBorbolet{
+        background-color: map-get($color, terciario);
+        .articlePresentacion{
+            @include flex(row, center, center, 80px);
+            padding: 0px 20px 0px 20px;
+            .imgCreadora{
+                width: 260px;
+                border-radius: 50px;
+            }
+            .txtCreadora{
+                font-size: map-get($medidas, subtitulo);
+                color: map-get($color, primario);
+                margin-bottom: 50px;
+            }
+            .divCreadora{        
+                .flechas{
+                    text-align: right;
+                    margin-right: 50px;
+                }
+            }
+        }
+        .articleHistoria{
+            @include flex(row, center, center, 80px);
+            padding: 20px;
+            padding-top: 80px;
+            .imgIndigenas{
+                width: 260px;
+                border-radius: 50px;
+            }
+            .txtCreadora{
+                font-size: map-get($medidas, subtitulo);
+                color: map-get($color, secundario);
+                margin-bottom: 50px;
+            }       
+            .flechas{
+                .imgFlecha{
+                    transform: scaleX(-1);
+                    margin-left: 50px;
+                }
+            }
+        }
+        .articleResultado{
+            @include flex(row, center, center, 80px);
+            padding: 0px 80px 0px 80px;
+            .imgModelos{
+                width: 260px;
+                border-radius: 50px;
+            }
+            .txtCreadora{
+                font-size: map-get($medidas, subtitulo);
+                color: map-get($color, primario);
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

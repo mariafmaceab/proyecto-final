@@ -129,7 +129,7 @@ header .imgproducto {
   display: none;
 }
 
-.imgproducto {
+.cardImg .imgproducto {
   width: 100%;
 }
 
@@ -561,6 +561,73 @@ nav ul div button.dropdown-toggle {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+.presentación .frase {
+  width: 100%;
+}
+.presentación .presentacionBorbolet {
+  background-color: #EAE8FF;
+}
+.presentación .presentacionBorbolet .articlePresentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 0px 20px 0px 20px;
+}
+.presentación .presentacionBorbolet .articlePresentacion .imgCreadora {
+  width: 260px;
+  border-radius: 50px;
+}
+.presentación .presentacionBorbolet .articlePresentacion .txtCreadora {
+  font-size: 1.875rem;
+  color: #470063;
+  margin-bottom: 50px;
+}
+.presentación .presentacionBorbolet .articlePresentacion .divCreadora .flechas {
+  text-align: right;
+  margin-right: 50px;
+}
+.presentación .presentacionBorbolet .articleHistoria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px;
+  padding-top: 80px;
+}
+.presentación .presentacionBorbolet .articleHistoria .imgIndigenas {
+  width: 260px;
+  border-radius: 50px;
+}
+.presentación .presentacionBorbolet .articleHistoria .txtCreadora {
+  font-size: 1.875rem;
+  color: #FF1D79;
+  margin-bottom: 50px;
+}
+.presentación .presentacionBorbolet .articleHistoria .flechas .imgFlecha {
+  transform: scaleX(-1);
+  margin-left: 50px;
+}
+.presentación .presentacionBorbolet .articleResultado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 0px 80px 0px 80px;
+}
+.presentación .presentacionBorbolet .articleResultado .imgModelos {
+  width: 260px;
+  border-radius: 50px;
+}
+.presentación .presentacionBorbolet .articleResultado .txtCreadora {
+  font-size: 1.875rem;
+  color: #470063;
+  margin-bottom: 50px;
 }
 
 /*Carpeta components
