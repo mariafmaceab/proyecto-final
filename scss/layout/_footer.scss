@@ -1,5 +1,6 @@
 .sectionFooter{
     background-color: map-get($color, terciario);
+    font-family: "Poppins", sans-serif;
 
     .articleFooter{
         @include flex(row, space-around, baseline, 30px);
@@ -28,11 +29,13 @@
         }
         .subtitulo{
             font-weight: 600;
+            font-family: "Poppins", sans-serif;
         }
  
     }
     .articleCopy{
         text-align: center;
         padding: 40px;
+        font-family: "Poppins", sans-serif;
     }
 }

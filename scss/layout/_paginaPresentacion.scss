@@ -4,6 +4,7 @@
     }
     .presentacionBorbolet{
         background-color: map-get($color, terciario);
+        font-family: "Poppins", sans-serif;
         .articlePresentacion{
             @include flex(row, center, center, 80px);
             padding: 0px 20px 0px 20px;
@@ -40,6 +41,7 @@
                 .imgFlecha{
                     transform: scaleX(-1);
                     margin-left: 50px;
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -54,6 +56,48 @@
                 font-size: map-get($medidas, subtitulo);
                 color: map-get($color, primario);
                 margin-bottom: 50px;
+            }
+        }
+        .presentacionMensaje{
+            background: rgb(71,0,99);
+            background: linear-gradient(0deg, rgba(71,0,99,1) 0%, rgba(234,232,255,1) 100%);
+            margin-top: 100px;
+            padding: 40px;
+            .imgpresentacionMensaje{
+                @include flex(row, center, center, 70px);
+            }
+            .divPresentacionArete{
+                .aretePresentacion{
+                    border-radius: 50%;
+                    width: 200px; 
+                    height: 200px;
+                }
+            }
+            .pMensaje{
+                font-size: map-get($medidas, titulo);
+                text-align: center;
+                color: aliceblue;
+                padding: 20px;
+            }
+            .divbtnComprar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .btnComprar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 220px;
+                    height: 2.875rem;
+                    font-size: map-get($medidas, parrafo);
+                    background-color: map-get($color, secundario);
+                    color:white;
+                    padding: 18px;
+                    border-radius: 1.25rem;
+                    border: .125rem solid #FF1D79;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 1px #555555;
+            }
             }
         }
     }

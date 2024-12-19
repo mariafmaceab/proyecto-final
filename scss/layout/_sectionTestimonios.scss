@@ -1,5 +1,6 @@
 .sectionTestimonios{
     padding: .625rem;
+    font-family: "Poppins", sans-serif;
     .tituloTestimonios{
         color: map-get($color,primario );
         font-size: map-get($medidas, titulo);

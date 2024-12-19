@@ -1,6 +1,7 @@
 .sectionCompra{
     padding: 1.25rem;
     @include grid(repeat(2,1fr), repeat(1fr));
+    font-family: "Poppins", sans-serif;
     .linea{
         height: 6px;
         width: 100%;

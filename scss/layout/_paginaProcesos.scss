@@ -1,0 +1,62 @@
+.sectionProcesos{
+    padding: 20px;
+    background: rgb(255,137,185);
+    background: linear-gradient(0deg, rgba(255,137,185,1) 0%, rgba(234,232,255,1) 100%);
+    font-family: "Poppins", sans-serif;
+    .tituloProcesos{
+        font-size: map-get($medidas, subtitulo);
+        color: map-get($color, secundario);
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .txtProcesos{
+        font-size: map-get($medidas, parrafo);
+        color:black;
+        text-align: center;
+    }
+    .divProcesos{
+        @include flex(row, center, center, 80px);
+        margin: 0px 50px 0px 50px;
+        .imgMostacilla{
+            width: 450px;
+            border-radius: 30px;
+        }
+        .txtProcesos{
+            text-align: left;
+        }
+    }
+    .item1{
+        color: black;
+    }
+    .videoYoutube{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .txt1{
+        font-size: map-get($medidas, subtitulo);
+        margin: 20px;
+        font-style: italic;
+    }
+    .divbtnComprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btnComprar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 2.875rem;
+            font-size: map-get($medidas, parrafo);
+            background-color: map-get($color, secundario);
+            color:white;
+            padding: 18px;
+            border-radius: 1.25rem;
+            border: .125rem solid #FF1D79;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px #555555;
+    }
+}
+}

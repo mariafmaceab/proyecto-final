@@ -74,6 +74,7 @@ header .imgproducto {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   place-items: center;
+  font-family: "Poppins", sans-serif;
 }
 .sectionPrincipal .btnMovilPrimary, .sectionPrincipal .btnMovilSecondary {
   display: none;
@@ -306,6 +307,7 @@ nav ul div button.dropdown-toggle {
 
 .sectionFotografia {
   margin-bottom: 1.25rem;
+  font-family: "Poppins", sans-serif;
 }
 .sectionFotografia .tituloFotografia {
   font-size: 3rem;
@@ -329,6 +331,7 @@ nav ul div button.dropdown-toggle {
 
 .sectionSlider {
   background-color: #470063;
+  font-family: "Poppins", sans-serif;
   padding: 1.25rem;
   overflow: hidden;
   white-space: nowrap;
@@ -376,6 +379,7 @@ nav ul div button.dropdown-toggle {
 }
 .sectionTestimonios {
   padding: 0.625rem;
+  font-family: "Poppins", sans-serif;
 }
 .sectionTestimonios .tituloTestimonios {
   color: #470063;
@@ -422,6 +426,7 @@ nav ul div button.dropdown-toggle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1fr);
+  font-family: "Poppins", sans-serif;
 }
 .sectionCompra .linea {
   height: 6px;
@@ -470,6 +475,7 @@ nav ul div button.dropdown-toggle {
 
 .sectionFooter {
   background-color: #EAE8FF;
+  font-family: "Poppins", sans-serif;
 }
 .sectionFooter .articleFooter {
   display: flex;
@@ -501,14 +507,17 @@ nav ul div button.dropdown-toggle {
 }
 .sectionFooter .articleFooter .subtitulo {
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .sectionFooter .articleCopy {
   text-align: center;
   padding: 40px;
+  font-family: "Poppins", sans-serif;
 }
 
 .sectionContacto {
   padding: 40px;
+  font-family: "Poppins", sans-serif;
 }
 .sectionContacto .articleContacto {
   display: flex;
@@ -568,6 +577,7 @@ nav ul div button.dropdown-toggle {
 }
 .presentación .presentacionBorbolet {
   background-color: #EAE8FF;
+  font-family: "Poppins", sans-serif;
 }
 .presentación .presentacionBorbolet .articlePresentacion {
   display: flex;
@@ -611,6 +621,7 @@ nav ul div button.dropdown-toggle {
 .presentación .presentacionBorbolet .articleHistoria .flechas .imgFlecha {
   transform: scaleX(-1);
   margin-left: 50px;
+  margin-bottom: 50px;
 }
 .presentación .presentacionBorbolet .articleResultado {
   display: flex;
@@ -628,6 +639,117 @@ nav ul div button.dropdown-toggle {
   font-size: 1.875rem;
   color: #470063;
   margin-bottom: 50px;
+}
+.presentación .presentacionBorbolet .presentacionMensaje {
+  background: rgb(71, 0, 99);
+  background: linear-gradient(0deg, rgb(71, 0, 99) 0%, rgb(234, 232, 255) 100%);
+  margin-top: 100px;
+  padding: 40px;
+}
+.presentación .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.presentación .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.presentación .presentacionBorbolet .presentacionMensaje .pMensaje {
+  font-size: 3rem;
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+}
+.presentación .presentacionBorbolet .presentacionMensaje .divbtnComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentación .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 2.875rem;
+  font-size: 1.125rem;
+  background-color: #FF1D79;
+  color: white;
+  padding: 18px;
+  border-radius: 1.25rem;
+  border: 0.125rem solid #FF1D79;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #555555;
+}
+
+.sectionProcesos {
+  padding: 20px;
+  background: rgb(255, 137, 185);
+  background: linear-gradient(0deg, rgb(255, 137, 185) 0%, rgb(234, 232, 255) 100%);
+  font-family: "Poppins", sans-serif;
+}
+.sectionProcesos .tituloProcesos {
+  font-size: 1.875rem;
+  color: #FF1D79;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.sectionProcesos .txtProcesos {
+  font-size: 1.125rem;
+  color: black;
+  text-align: center;
+}
+.sectionProcesos .divProcesos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 0px 50px 0px 50px;
+}
+.sectionProcesos .divProcesos .imgMostacilla {
+  width: 450px;
+  border-radius: 30px;
+}
+.sectionProcesos .divProcesos .txtProcesos {
+  text-align: left;
+}
+.sectionProcesos .item1 {
+  color: black;
+}
+.sectionProcesos .videoYoutube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionProcesos .txt1 {
+  font-size: 1.875rem;
+  margin: 20px;
+  font-style: italic;
+}
+.sectionProcesos .divbtnComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionProcesos .divbtnComprar .btnComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 2.875rem;
+  font-size: 1.125rem;
+  background-color: #FF1D79;
+  color: white;
+  padding: 18px;
+  border-radius: 1.25rem;
+  border: 0.125rem solid #FF1D79;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #555555;
 }
 
 /*Carpeta components
