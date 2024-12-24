@@ -572,104 +572,107 @@ nav ul div button.dropdown-toggle {
   gap: 5px;
 }
 
-.presentación .frase {
-  width: 100%;
-}
-.presentación .presentacionBorbolet {
+.presentacionBorbolet {
   background-color: #EAE8FF;
   font-family: "Poppins", sans-serif;
 }
-.presentación .presentacionBorbolet .articlePresentacion {
+.presentacionBorbolet .frase {
+  width: 100%;
+}
+.presentacionBorbolet .articlePresentacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 80px;
+  flex-wrap: wrap;
   padding: 0px 20px 0px 20px;
 }
-.presentación .presentacionBorbolet .articlePresentacion .imgCreadora {
+.presentacionBorbolet .articlePresentacion .imgCreadora {
   width: 260px;
   border-radius: 50px;
 }
-.presentación .presentacionBorbolet .articlePresentacion .txtCreadora {
+.presentacionBorbolet .articlePresentacion .txtCreadora {
   font-size: 1.875rem;
   color: #470063;
   margin-bottom: 50px;
 }
-.presentación .presentacionBorbolet .articlePresentacion .divCreadora .flechas {
+.presentacionBorbolet .articlePresentacion .divCreadora .flechas {
   text-align: right;
   margin-right: 50px;
 }
-.presentación .presentacionBorbolet .articleHistoria {
+.presentacionBorbolet .articleHistoria {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 80px;
+  flex-wrap: wrap;
   padding: 20px;
   padding-top: 80px;
 }
-.presentación .presentacionBorbolet .articleHistoria .imgIndigenas {
+.presentacionBorbolet .articleHistoria .imgIndigenas {
   width: 260px;
   border-radius: 50px;
 }
-.presentación .presentacionBorbolet .articleHistoria .txtCreadora {
+.presentacionBorbolet .articleHistoria .txtCreadora {
   font-size: 1.875rem;
   color: #FF1D79;
   margin-bottom: 50px;
 }
-.presentación .presentacionBorbolet .articleHistoria .flechas .imgFlecha {
+.presentacionBorbolet .articleHistoria .flechas .imgFlecha {
   transform: scaleX(-1);
   margin-left: 50px;
   margin-bottom: 50px;
 }
-.presentación .presentacionBorbolet .articleResultado {
+.presentacionBorbolet .articleResultado {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 80px;
+  flex-wrap: wrap;
   padding: 0px 80px 0px 80px;
 }
-.presentación .presentacionBorbolet .articleResultado .imgModelos {
+.presentacionBorbolet .articleResultado .imgModelos {
   width: 260px;
   border-radius: 50px;
 }
-.presentación .presentacionBorbolet .articleResultado .txtCreadora {
+.presentacionBorbolet .articleResultado .txtCreadora {
   font-size: 1.875rem;
   color: #470063;
   margin-bottom: 50px;
 }
-.presentación .presentacionBorbolet .presentacionMensaje {
+.presentacionBorbolet .presentacionMensaje {
   background: rgb(71, 0, 99);
   background: linear-gradient(0deg, rgb(71, 0, 99) 0%, rgb(234, 232, 255) 100%);
   margin-top: 100px;
   padding: 40px;
 }
-.presentación .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+.presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 70px;
 }
-.presentación .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+.presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.presentación .presentacionBorbolet .presentacionMensaje .pMensaje {
+.presentacionBorbolet .presentacionMensaje .pMensaje {
   font-size: 3rem;
   text-align: center;
   color: aliceblue;
   padding: 20px;
 }
-.presentación .presentacionBorbolet .presentacionMensaje .divbtnComprar {
+.presentacionBorbolet .presentacionMensaje .divbtnComprar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.presentación .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+.presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -876,6 +879,13 @@ nav ul div button.dropdown-toggle {
   .sectionContacto .datos .dato2 {
     width: 290px;
   }
+  .sectionProcesos .divProcesos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
 }
 @media (max-width: 834px) {
   .sectionColeccion .contenedorbtn .btnVerMas {
@@ -957,6 +967,78 @@ nav ul div button.dropdown-toggle {
   .sectionCompra .contenedorCompra .cardCompra .divCompra .imgCompra {
     width: 84px;
     height: 84px;
+  }
+  .presentacionBorbolet .articlePresentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .presentacionBorbolet .articlePresentacion .imgCreadora {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+  .presentacionBorbolet .articlePresentacion .txtCreadora {
+    font-size: 1.125rem;
+    color: #470063;
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .articleHistoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+  }
+  .presentacionBorbolet .articleHistoria .imgIndigenas {
+    width: 200px;
+    margin-bottom: 80px;
+  }
+  .presentacionBorbolet .articleHistoria .txtCreadora {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .articleResultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 40px 0px 40px;
+  }
+  .presentacionBorbolet .articleResultado .imgModelos {
+    width: 200px;
+  }
+  .presentacionBorbolet .articleResultado .txtCreadora {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .presentacionMensaje {
+    margin-top: 50px;
+  }
+  .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+    width: 100px;
+    height: 100px;
+  }
+  .presentacionBorbolet .presentacionMensaje .pMensaje {
+    font-size: 1.875rem;
+    padding: 10px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+    width: 200px;
+    height: 40px;
+    font-size: 1.125rem;
+    padding: 10px;
+    border-radius: 1.25rem;
   }
 }
 @media (max-width: 635px) {
@@ -1222,6 +1304,66 @@ nav ul div button.dropdown-toggle {
   }
   .sectionContacto .datos .dato2 {
     width: 150px;
+  }
+  .sectionProcesos .divProcesos .imgMostacilla {
+    width: 310px;
+    border-radius: 10px;
+  }
+  .presentacionBorbolet .articlePresentacion {
+    padding: 20px;
+  }
+  .presentacionBorbolet .articlePresentacion .imgCreadora {
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .articlePresentacion .txtCreadora {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacionBorbolet .articleHistoria {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
+  .presentacionBorbolet .articleHistoria .imgIndigenas {
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .articleHistoria .txtCreadora {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacionBorbolet .articleResultado {
+    padding: 0px 20px 0px 20px;
+  }
+  .presentacionBorbolet .articleResultado .imgModelos {
+    margin-bottom: 15px;
+  }
+  .presentacionBorbolet .articleResultado .txtCreadora {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .presentacionBorbolet .presentacionMensaje {
+    margin-top: 10px;
+  }
+  .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+    width: 90px;
+    height: 90px;
+  }
+  .presentacionBorbolet .presentacionMensaje .pMensaje {
+    font-size: 1.125rem;
+    padding: 20px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+    width: 200px;
+    height: 40px;
+    font-size: 1.125rem;
+    padding: 10px;
+    border-radius: 1.25rem;
   }
 }
 @media (max-width: 400px) {

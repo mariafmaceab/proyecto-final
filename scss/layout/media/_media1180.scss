@@ -90,6 +90,11 @@
             }
         }
     }
+    .sectionProcesos{
+        .divProcesos{
+            @include flex(column, center, center, 80px);
+        }
+    }
 }
 
 @media (max-width:834px){
@@ -196,6 +201,68 @@
             }
         }
     }
+    .presentacionBorbolet{
+        .articlePresentacion{
+            @include flex(row, center, center, 30px);
+            .imgCreadora{
+                width: 200px;
+                margin-bottom: 40px;
+            }
+            .txtCreadora{
+                font-size: map-get($medidas, parrafo);
+                color: map-get($color, primario);
+                margin-bottom: 15px;
+            }
+        }
+        .articleHistoria{
+            @include flex(row, center, center, 30px);
+            padding-top: 40px;
+                .imgIndigenas{
+                    width: 200px;
+                    margin-bottom: 80px;
+                }
+                .txtCreadora{
+                    font-size: map-get($medidas, parrafo);
+                    margin-bottom: 15px;
+                }
+            }
+            .articleResultado{
+                @include flex(row, center, center, 30px);
+                padding: 0px 40px 0px 40px;
+                .imgModelos{
+                    width: 200px;
+                }
+                .txtCreadora{
+                    font-size: map-get($medidas, parrafo);
+                    margin-bottom: 15px;
+                }
+            }
+            .presentacionMensaje{
+                margin-top: 50px;
+                .imgpresentacionMensaje{
+                    @include flex(row, center, center, 30px);
+                }
+                .divPresentacionArete{
+                    .aretePresentacion{
+                        width: 100px; 
+                        height: 100px;
+                    }
+                }
+                .pMensaje{
+                    font-size: map-get($medidas, subtitulo);
+                    padding: 10px;
+                }
+                .divbtnComprar{
+                    .btnComprar{
+                        width: 200px;
+                        height: 40px;
+                        font-size: map-get($medidas, parrafo);
+                        padding: 10px;
+                        border-radius: 1.25rem;
+                    }
+                }
+            }
+        }
 }
 
 @media (max-width:635px){

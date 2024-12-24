@@ -173,6 +173,72 @@
             }
         }
     }
+    .sectionProcesos{
+        .divProcesos{
+            .imgMostacilla{
+                width: 310px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .presentacionBorbolet{
+        .articlePresentacion{
+            padding: 20px;
+            .imgCreadora{
+                margin-bottom: 15px;
+            }
+            .txtCreadora{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+        .articleHistoria{
+            flex-direction: column-reverse;
+            padding-top: 30px;
+                .imgIndigenas{
+                    margin-bottom: 15px;
+                }
+                .txtCreadora{
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
+            .articleResultado{
+                padding: 0px 20px 0px 20px;
+                .imgModelos{
+                    margin-bottom: 15px;
+                }
+                .txtCreadora{
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+            .presentacionMensaje{
+                margin-top: 10px;
+                .imgpresentacionMensaje{
+                    @include flex(row, center, center, 10px);
+                }
+                .divPresentacionArete{
+                    .aretePresentacion{
+                        width: 90px; 
+                        height: 90px;
+                    }
+                }
+                .pMensaje{
+                    font-size: map-get($medidas, parrafo);
+                    padding: 20px;
+                }
+                .divbtnComprar{
+                    .btnComprar{
+                        width: 200px;
+                        height: 40px;
+                        font-size: map-get($medidas, parrafo);
+                        padding: 10px;
+                        border-radius: 1.25rem;
+                    }
+                }
+            }
+        }
 }
 
 @media (max-width:400px){
