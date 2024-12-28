@@ -268,11 +268,10 @@ nav ul div button.dropdown-toggle {
   background-color: #EAE8FF;
 }
 .earrings-main .sectionColeccion {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
   padding-block: 3%;
 }
 .earrings-main .sectionColeccion .tituloAretes h2 {
@@ -301,8 +300,18 @@ nav ul div button.dropdown-toggle {
 .earrings-main .sectionColeccion .products-section {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-block: 3%;
   gap: 4rem;
+  margin-top: 30px;
+}
+.earrings-main .sectionColeccion .products-section .productos {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .sectionFotografia {
@@ -482,7 +491,7 @@ nav ul div button.dropdown-toggle {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
-  gap: 30px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .sectionFooter .articleFooter .divcontactoFooter {
@@ -497,6 +506,9 @@ nav ul div button.dropdown-toggle {
 }
 .sectionFooter .articleFooter .menuFooter .link-list {
   list-style-type: none;
+}
+.sectionFooter .articleFooter .menuFooter .link-list .list {
+  display: block;
 }
 .sectionFooter .articleFooter .menuFooter .link-list .link {
   text-decoration: none;
@@ -1277,6 +1289,7 @@ nav ul div button.dropdown-toggle {
     height: 100px;
     border-radius: 15px;
     gap: 20px;
+    flex-direction: center;
   }
   .sectionCompra .contenedorCompra .cardCompra .compra1 {
     display: none;
@@ -1310,7 +1323,7 @@ nav ul div button.dropdown-toggle {
     border-radius: 10px;
   }
   .presentacionBorbolet .articlePresentacion {
-    padding: 20px;
+    padding: 2gi0px;
   }
   .presentacionBorbolet .articlePresentacion .imgCreadora {
     margin-bottom: 15px;
@@ -1380,6 +1393,13 @@ nav ul div button.dropdown-toggle {
   }
   .sectionTestimonios .antepenultima {
     display: none;
+  }
+  .sectionFooter .articleFooter {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .sectionFooter .articleFooter .menuFooter .link-list {
+    padding-left: 0px;
   }
 }
 
