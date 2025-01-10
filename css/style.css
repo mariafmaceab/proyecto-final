@@ -841,33 +841,59 @@ nav ul div button.dropdown-toggle {
     gap: 1.5625rem;
   }
 }
-@media (max-width: 950px) {
-  .navBar .logo {
+@media (max-width: 980px) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1.5625rem;
+    background-color: #ffffff;
+    border-bottom: 0.1875rem solid #470063;
+  }
+  .mobile-navbar .navbar-toggler {
+    padding: 0;
+    border-color: #470063;
+    border: none;
+    box-shadow: 0 0 0 0;
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 1.4375rem;
   }
-  .navBar .dropdown {
-    margin-right: 300px;
+  .mobile-navbar .container-fluid {
+    width: 30%;
+    height: 50px;
+    padding: 0;
+    margin-left: 40px;
   }
-  .coleccion {
-    display: none;
+  .mobile-navbar .container-fluid .collapse .navbar-nav {
+    height: 100%;
+    padding-left: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10%;
   }
-  .testimonios {
-    display: none;
+  .mobile-navbar .container-fluid .nav-item {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
   }
-  .presentacion {
-    display: none;
+  .mobile-navbar .container-fluid .coleccion-link {
+    color: #470063;
+    font-size: 1.125rem;
   }
-  .contacto {
-    display: none;
+  .mobile-navbar .logo-mobile {
+    padding-right: 40px;
   }
-  .procesos {
-    display: none;
+  .mobile-navbar .aBrand {
+    height: 10px;
+    position: relative;
+    top: 43px;
   }
-  .cesta {
-    display: none;
+  .mobile-navbar .navbar-brand {
+    margin-right: 30px;
+    position: relative;
+    top: -34px;
   }
   .sectionPrincipal h1 {
     grid-row: 1/2;
@@ -899,7 +925,12 @@ nav ul div button.dropdown-toggle {
     gap: 80px;
   }
 }
-@media (max-width: 834px) {
+@media (min-width: 981px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
   .sectionColeccion .contenedorbtn .btnVerMas {
     width: 8.0625rem;
     height: 1.25rem;
@@ -1053,7 +1084,7 @@ nav ul div button.dropdown-toggle {
     border-radius: 1.25rem;
   }
 }
-@media (max-width: 635px) {
+@media (max-width: 655px) {
   .sectionPrincipal h1 {
     font-weight: 500;
     font-size: 36px;

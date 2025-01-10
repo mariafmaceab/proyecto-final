@@ -28,38 +28,59 @@
         }
     }
 }
-@media (max-width: 950px){
-    .navBar{  
-        .logo{
+@media (max-width: 980px){
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        @include flex(row, space-between, start, 1.5625rem);
+        background-color: #ffffff;
+        border-bottom: .1875rem solid #470063;
+        .navbar-toggler{
+            padding: 0;
+            border-color: #470063;
+            border: none;
+            box-shadow: 0 0 0 0;
             position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-            top: 1.4375rem;
         }
-        .dropdown{
-            margin-right: 300px;
+        .container-fluid{
+            width: 30%;
+            height: 50px;
+            padding: 0;
+            margin-left: 40px;
+            .collapse{
+                .navbar-nav{
+                    height: 100%;
+                    padding-left: 15px;
+                    background-color: #ffffff;
+                    width: 100%;
+                    border-radius: 10%;
+                }
+            }
+            .nav-item{
+                margin-bottom: 15px;
+                font-size: 1.125rem;
+            }
+            .coleccion-link{
+                color: map-get($color, primario);
+                font-size: 1.125rem;
+            }
+        }
+        .logo-mobile{
+            padding-right: 40px;
+        }
+        .aBrand{
+            height: 10px;
+            position:relative;
+            top: 43px;
+        }
+        .navbar-brand{
+            margin-right: 30px;
+            position:relative;
+            top: -34px;
         }
     }
-
-    .coleccion{
-        display:none
-    }
-    .testimonios{
-        display:none
-    }
-    .presentacion{
-        display:none
-    }
-    .contacto{
-        display:none
-    }
-    .procesos{
-        display:none
-    }
-    .cesta{
-        display:none
-    }
-
+        
     .sectionPrincipal{
         h1{
             grid-row: 1/2;
@@ -97,7 +118,13 @@
     }
 }
 
-@media (max-width:834px){
+@media (min-width: 981px){
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+@media (max-width:840px){
     .sectionColeccion{
         .contenedorbtn{
             .btnVerMas{
@@ -265,7 +292,7 @@
         }
 }
 
-@media (max-width:635px){
+@media (max-width:655px){
     .sectionPrincipal{
         h1{
             font-weight: 500;
