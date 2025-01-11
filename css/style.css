@@ -49,6 +49,9 @@ header .navBar {
   border-bottom: 0.1875rem solid #470063;
   list-style: none;
 }
+header .navBar .dropdown .btn {
+  box-shadow: 0 0 0 0;
+}
 header .navBar div {
   display: flex;
   flex-direction: row;
@@ -226,6 +229,12 @@ header .imgproducto {
   justify-content: space-between;
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+.dropdown .btn {
+  border-color: #470063;
+  border: none;
+  box-shadow: 0 0 0 0;
 }
 
 .dropdown-menu {
@@ -845,6 +854,9 @@ nav ul div button.dropdown-toggle {
   .desktop-navbar {
     display: none;
   }
+  * {
+    transition: none !important;
+  }
   .mobile-navbar {
     display: flex;
     flex-direction: row;
@@ -854,12 +866,14 @@ nav ul div button.dropdown-toggle {
     background-color: #ffffff;
     border-bottom: 0.1875rem solid #470063;
   }
+  .mobile-navbar .navbar-toggler-icon {
+    background-image: url(../assets/img/Hamburguesa.svg);
+  }
   .mobile-navbar .navbar-toggler {
     padding: 0;
     border-color: #470063;
     border: none;
     box-shadow: 0 0 0 0;
-    position: absolute;
   }
   .mobile-navbar .container-fluid {
     width: 30%;
@@ -867,12 +881,23 @@ nav ul div button.dropdown-toggle {
     padding: 0;
     margin-left: 40px;
   }
+  .mobile-navbar .container-fluid .collapse {
+    z-index: 1050;
+  }
   .mobile-navbar .container-fluid .collapse .navbar-nav {
+    background-color: #ffffff;
     height: 100%;
     padding-left: 15px;
-    background-color: #ffffff;
+    padding-right: 15px;
     width: 100%;
     border-radius: 10%;
+  }
+  .mobile-navbar .container-fluid .collapse .navbar-nav .dropdown-menu {
+    width: 100%;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15), inset 0px -1px 2px rgba(255, 255, 255, 0.6);
+  }
+  .mobile-navbar .container-fluid .collapse .navbar-nav .coleccion-link {
+    color: #470063;
   }
   .mobile-navbar .container-fluid .nav-item {
     margin-bottom: 15px;
@@ -881,6 +906,10 @@ nav ul div button.dropdown-toggle {
   .mobile-navbar .container-fluid .coleccion-link {
     color: #470063;
     font-size: 1.125rem;
+    padding-bottom: 0;
+  }
+  .mobile-navbar .navbar-collapse.show {
+    display: block;
   }
   .mobile-navbar .logo-mobile {
     padding-right: 40px;

@@ -22,6 +22,12 @@ header{
         height: 4.375rem;
         border-bottom: .1875rem solid #470063;
         list-style: none;
+
+        .dropdown{
+            .btn{
+                box-shadow: 0 0 0 0;
+            }
+        }
     }
 
     .navBar div{
