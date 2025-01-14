@@ -36,7 +36,6 @@
     *{
         transition: none !important;
      }
-      
     .mobile-navbar {
         @include flex(row, space-between, start, 1.5625rem);
         background-color: #ffffff;
@@ -58,7 +57,6 @@
             margin-left: 40px;
             .collapse{
                 z-index: 1050;
-
                 .navbar-nav{
                     background-color: #ffffff;
                     height: 100%;
@@ -85,12 +83,12 @@
                 font-size: 1.125rem;
                 padding-bottom: 0;
             }
-        }
-        .navbar-collapse.show {
-            display: block;
-        }
-        .logo-mobile{
-            padding-right: 40px;
+            .dropdown-item:hover {
+                background-color: transparent !important;
+                color: map-get($color, primario);
+            }
+            
+              
         }
         .aBrand{
             height: 10px;
@@ -144,6 +142,9 @@
 @media (min-width: 981px){
     .mobile-navbar {
         display: none;
+    }
+    .head{
+        display: block;
     }
 }
 

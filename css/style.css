@@ -908,11 +908,9 @@ nav ul div button.dropdown-toggle {
     font-size: 1.125rem;
     padding-bottom: 0;
   }
-  .mobile-navbar .navbar-collapse.show {
-    display: block;
-  }
-  .mobile-navbar .logo-mobile {
-    padding-right: 40px;
+  .mobile-navbar .container-fluid .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #470063;
   }
   .mobile-navbar .aBrand {
     height: 10px;
@@ -957,6 +955,9 @@ nav ul div button.dropdown-toggle {
 @media (min-width: 981px) {
   .mobile-navbar {
     display: none;
+  }
+  .head {
+    display: block;
   }
 }
 @media (max-width: 840px) {
@@ -1224,6 +1225,58 @@ nav ul div button.dropdown-toggle {
   }
   .sectionContacto .datos .dato2 {
     width: 190px;
+  }
+}
+@media (max-width: 500px) and (max-width: 980px) {
+  .mobile-navbar {
+    gap: 5px;
+  }
+  .mobile-navbar .navbar-toggler-icon {
+    background-image: url(../assets/img/Hamburguesa.svg);
+  }
+  .mobile-navbar .container-fluid {
+    width: 30%;
+    height: 50px;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .mobile-navbar .container-fluid .collapse {
+    z-index: 1050;
+  }
+  .mobile-navbar .container-fluid .collapse .navbar-nav {
+    background-color: #ffffff;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    border-radius: 10%;
+  }
+  .mobile-navbar .container-fluid .collapse .navbar-nav .dropdown-menu {
+    width: 100%;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15), inset 0px -1px 2px rgba(255, 255, 255, 0.6);
+  }
+  .mobile-navbar .container-fluid .collapse .navbar-nav .coleccion-link {
+    color: #470063;
+  }
+  .mobile-navbar .container-fluid .nav-item {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+  }
+  .mobile-navbar .logo-mobile {
+    padding-right: 5px;
+    width: 10px;
+    height: 10px;
+  }
+  .mobile-navbar .aBrand {
+    height: 10px;
+    position: relative;
+    top: 43px;
+  }
+  .mobile-navbar .navbar-brand {
+    width: 80%;
+    margin-right: 5px;
+    position: relative;
+    top: -26px;
   }
 }
 @media (max-width: 500px) {

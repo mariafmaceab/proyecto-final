@@ -9,11 +9,54 @@
     <link rel="stylesheet" href="../css/style.css">
 <body>
     <header>
-        <nav>
+        <nav class="mobile-navbar navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <!-- Botón de menú hamburguesa -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Contenedor del menú desplegable -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Menú desplegable "Colección" -->
+                        <li class="nav-item dropdown">
+                            <a class="coleccion-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Colección
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <img src="../assets/img/Aretes.png" alt="Logo de unos aretes">
+                                <a class="dropdown-item" href="./aretes.html">Aretes</a>
+                            </li>
+                            <li>
+                                <img src="../assets/img/collar-svgrepo-com 1.png" alt="Logo de un collar">
+                                <a class="dropdown-item" href="./collares.html">Collares</a>
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="nav-item procesos">
+                            <a href="./procesos.html">Proceso creativo</a>
+                        </li>
+                        <li class="nav-item presentacion">
+                            <a href="#">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item contacto">
+                            <a href="./contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-mobile"></div>
+                <a class="aBrand" href="../index.html"><img class="navbar-brand" src="../assets/img/Logo.png" alt="Logo"></a>
+            </div>
+          </nav>
+
+        <nav class="desktop-navbar">
             <ul class="navBar">
-                <div class="divNav">
+                <div class="coleccion-container">
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">   
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <a href="#"> Colección </a>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -21,7 +64,6 @@
                           <li><img src="../assets/img/collar-svgrepo-com 1.png" alt="Logo de un collar"><a href="./collares.html">Collares</a></li>
                         </ul>
                       </div>
-                    
                     <li class="procesos"> <a href="./procesos.html">Proceso creativo</a> </li>
                 </div>
 
