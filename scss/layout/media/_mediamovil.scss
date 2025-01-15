@@ -17,7 +17,7 @@
                         height: 100%;
                         padding-left: 15px;
                         padding-right: 15px;
-                        width: 100%;
+                        width: 200px;
                         border-radius: 10%;
                         .dropdown-menu{
                             width: 100%;
@@ -184,6 +184,7 @@
             font-size: 24px;
         }
         .contenedorCompra{
+            align-self: center;
             .cardCompra{
                 width: 290px;
                 height: 100px;
@@ -301,11 +302,15 @@
     .sectionFotografia{
         margin:0;
         padding:0;
+        padding-bottom: 20px;
+        .tituloFotografia{
+            margin-top: 25px;
+        }
         .fotografias{
             padding: 1px;
             .fotografia{
                 width: 302px;
-                height: 270px;
+                height: 280px;
             }
         }
     }
@@ -318,6 +323,9 @@
         .articleFooter{
             flex-direction: column;
             margin-left: 50px;
+            .imgLogoFooter{
+                width: 70%;
+            }
             .menuFooter{
                 .link-list{
                     padding-left: 0px;

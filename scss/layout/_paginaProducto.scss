@@ -1,0 +1,32 @@
+.paginaProducto{
+    padding: 40px;
+    @include flex(row,center, flex-start, 30px);
+    font-family: "Poppins", sans-serif;
+    .bottomsProducto{
+        margin: 20px 0px 20px 0px;
+        .btnCantidad{
+            width: 60px;
+            height: 40px;
+            color:map-get($color, primario);
+            border: .125rem solid #470063;
+            border-radius: 1.25rem;
+            box-shadow: 2px 2px 2px #555555;
+            background-color: rgba(15, 10, 10, 0);
+            cursor: pointer;
+            margin-right: 30px;
+        }
+        .btnCarrito{
+            width: 200px;
+            height: 40px;
+            background-color: map-get($color, secundario);
+            color:white;
+            border-radius: 1.25rem;
+            box-shadow: 2px 2px 2px #555555;
+            border: .125rem solid #FF1D79;
+            cursor: pointer;
+        }
+    }
+    .precioProducto{
+        font-size: map-get($medidas, parrafo);
+    }
+}
