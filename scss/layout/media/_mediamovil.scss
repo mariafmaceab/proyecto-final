@@ -1,55 +1,17 @@
 @media (max-width:500px){
     @media (max-width: 980px){
         .mobile-navbar {
-            gap: 5px;
-            .navbar-toggler-icon{
-                background-image: url(../assets/img/Hamburguesa.svg);
-            }
-            .container-fluid{
-                width: 30%;
-                height: 50px;
-                padding: 0;
-                margin-left: 10px;
-                .collapse{
-                    z-index: 1050;
-                    .navbar-nav{
-                        background-color: #ffffff;
-                        height: 100%;
-                        padding-left: 15px;
-                        padding-right: 15px;
-                        width: 200px;
-                        border-radius: 10%;
-                        .dropdown-menu{
-                            width: 100%;
-                            box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15),  
-                            inset 0px -1px 2px rgba(255, 255, 255, 0.6); 
-                        }
-                        .coleccion-link{
-                            color:#470063;
-                        }
-                    }
-                }
-                .nav-item{
-                    margin-bottom: 15px;
-                    font-size: 1.125rem;
-                }    
-            }
+            padding: 0px 10px 0px 10px;
     
             .logo-mobile{
-                padding-right: 5px;
                 width: 10px;
                 height: 10px;
             }
-            .aBrand{
-                height: 10px;
-                position:relative;
-                top: 43px;
-            }
             .navbar-brand{
                 width: 80%;
-                margin-right: 5px;
                 position:relative;
-                top: -26px;
+                top: -18px;
+                margin: 0px;
             }
         }
     }
@@ -180,6 +142,9 @@
         }
     }
     .sectionCompra{
+        .linea{
+            display: none;
+        }
         .tituloCompra{
             font-size: 24px;
         }

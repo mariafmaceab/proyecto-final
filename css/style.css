@@ -899,10 +899,11 @@ nav ul div button.dropdown-toggle {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
-    gap: 1.5625rem;
+    align-items: center;
+    gap: 20px;
     background-color: #ffffff;
     border-bottom: 0.1875rem solid #470063;
+    padding: 0px 20px 0px 20px;
   }
   .mobile-navbar .navbar-toggler-icon {
     background-image: url(../assets/img/Hamburguesa.svg);
@@ -914,12 +915,14 @@ nav ul div button.dropdown-toggle {
     box-shadow: 0 0 0 0;
   }
   .mobile-navbar .container-fluid {
-    width: 30%;
+    flex: 0;
+    width: 100%;
     height: 50px;
     padding: 0;
-    margin-left: 40px;
   }
   .mobile-navbar .container-fluid .collapse {
+    position: absolute;
+    top: 100%;
     z-index: 1050;
   }
   .mobile-navbar .container-fluid .collapse .navbar-nav {
@@ -950,15 +953,27 @@ nav ul div button.dropdown-toggle {
     background-color: transparent !important;
     color: #470063;
   }
-  .mobile-navbar .aBrand {
-    height: 10px;
+  .mobile-navbar .logo-mobile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     position: relative;
-    top: 43px;
+    top: 22px;
+    width: auto;
   }
-  .mobile-navbar .navbar-brand {
-    margin-right: 30px;
-    position: relative;
-    top: -34px;
+  .mobile-navbar .logo-mobile .navbar-brand {
+    padding: 0;
+  }
+  .mobile-navbar .logo-mobile .a {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-navbar .divCesta {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    text-align: right;
   }
   .sectionPrincipal h1 {
     grid-row: 1/2;
@@ -1267,54 +1282,17 @@ nav ul div button.dropdown-toggle {
 }
 @media (max-width: 500px) and (max-width: 980px) {
   .mobile-navbar {
-    gap: 5px;
-  }
-  .mobile-navbar .navbar-toggler-icon {
-    background-image: url(../assets/img/Hamburguesa.svg);
-  }
-  .mobile-navbar .container-fluid {
-    width: 30%;
-    height: 50px;
-    padding: 0;
-    margin-left: 10px;
-  }
-  .mobile-navbar .container-fluid .collapse {
-    z-index: 1050;
-  }
-  .mobile-navbar .container-fluid .collapse .navbar-nav {
-    background-color: #ffffff;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 200px;
-    border-radius: 10%;
-  }
-  .mobile-navbar .container-fluid .collapse .navbar-nav .dropdown-menu {
-    width: 100%;
-    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.15), inset 0px -1px 2px rgba(255, 255, 255, 0.6);
-  }
-  .mobile-navbar .container-fluid .collapse .navbar-nav .coleccion-link {
-    color: #470063;
-  }
-  .mobile-navbar .container-fluid .nav-item {
-    margin-bottom: 15px;
-    font-size: 1.125rem;
+    padding: 0px 10px 0px 10px;
   }
   .mobile-navbar .logo-mobile {
-    padding-right: 5px;
     width: 10px;
     height: 10px;
   }
-  .mobile-navbar .aBrand {
-    height: 10px;
-    position: relative;
-    top: 43px;
-  }
   .mobile-navbar .navbar-brand {
     width: 80%;
-    margin-right: 5px;
     position: relative;
-    top: -26px;
+    top: -18px;
+    margin: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -1431,6 +1409,9 @@ nav ul div button.dropdown-toggle {
   }
   .sectionTestimonios .tituloTestimonios {
     font-size: 24px;
+  }
+  .sectionCompra .linea {
+    display: none;
   }
   .sectionCompra .tituloCompra {
     font-size: 24px;
