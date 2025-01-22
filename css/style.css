@@ -905,6 +905,9 @@ nav ul div button.dropdown-toggle {
     border-bottom: 0.1875rem solid #470063;
     padding: 0px 20px 0px 20px;
   }
+  .mobile-navbar .show {
+    z-index: 1050;
+  }
   .mobile-navbar .navbar-toggler-icon {
     background-image: url(../assets/img/Hamburguesa.svg);
   }
@@ -913,6 +916,8 @@ nav ul div button.dropdown-toggle {
     border-color: #470063;
     border: none;
     box-shadow: 0 0 0 0;
+    transition: none;
+    overflow: hidden;
   }
   .mobile-navbar .container-fluid {
     width: 33%;
@@ -922,7 +927,6 @@ nav ul div button.dropdown-toggle {
   .mobile-navbar .container-fluid .collapse {
     position: absolute;
     top: 100%;
-    z-index: 1050;
   }
   .mobile-navbar .container-fluid .collapse .navbar-nav {
     background-color: #ffffff;
@@ -958,7 +962,7 @@ nav ul div button.dropdown-toggle {
   .mobile-navbar .logo-mobile a .navbar-brand {
     position: relative;
     top: 20px;
-    height: 100%;
+    height: auto;
   }
   .mobile-navbar .divCesta {
     width: 33%;

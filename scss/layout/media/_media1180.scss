@@ -41,6 +41,9 @@
         background-color: #ffffff;
         border-bottom: .1875rem solid #470063;
         padding: 0px 20px 0px 20px;
+        .show {
+            z-index: 1050;
+        }
 
         .navbar-toggler-icon{
             background-image: url(../assets/img/Hamburguesa.svg);
@@ -50,6 +53,8 @@
             border-color: #470063;
             border: none;
             box-shadow: 0 0 0 0;
+            transition: none;
+            overflow: hidden;
         }
         .container-fluid{
             width: 33%;
@@ -58,7 +63,6 @@
             .collapse{
                 position: absolute;
                 top: 100%;
-                z-index: 1050;
                 .navbar-nav{
                     background-color: #ffffff;
                     height: 100%;
@@ -97,7 +101,7 @@
                 .navbar-brand{
                     position: relative;
                     top: 20px;
-                    height: 100%;
+                    height: auto;
                 }
             }
         }
