@@ -37,7 +37,7 @@
         transition: none !important;
      }
     .mobile-navbar {
-        @include flex(row, space-between , center, 20px);
+        @include flex(row, space-between, center, 0);
         background-color: #ffffff;
         border-bottom: .1875rem solid #470063;
         padding: 0px 20px 0px 20px;
@@ -52,10 +52,9 @@
             box-shadow: 0 0 0 0;
         }
         .container-fluid{
-            flex: 0;
-            width: 100%;
-            height: 50px;
-            padding: 0;
+            width: 33%;
+            margin-right: 0;
+            padding-right: 0;
             .collapse{
                 position: absolute;
                 top: 100%;
@@ -93,27 +92,23 @@
               
         }
         .logo-mobile{
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            top: 22px;
-            width: auto;
-            .navbar-brand{
-                padding: 0;
-            }
-            .a{
-                margin: 0;
-                padding:0;
+            width: 33%;
+            a{
+                .navbar-brand{
+                    position: relative;
+                    top: 20px;
+                    height: 100%;
+                }
             }
         }
 
         .divCesta{
+            width: 33%;
             display: flex;
             align-items: center;
             height: 69px;
             text-align: right;
+            justify-content: end;
         }
     }
         
